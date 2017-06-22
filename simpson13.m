@@ -19,7 +19,7 @@ va = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t0);
 vb = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t);
 vm = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * tm);
 
-z = (h/3) * (va + (4*vm) + vb);
+z = ((t - t0)/6) * (va + (4*vm) + vb);
 
 a = sqrt(g*m/c);
 b = sqrt(g*c/m);

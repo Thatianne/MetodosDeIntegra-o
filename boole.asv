@@ -1,0 +1,34 @@
+% ***** Método de Boole *****
+% Pedro Gomes e Thatianne Carvalho
+% massa - m, gravidade - g, constante de arraste - c, distância - z, tempo
+% t0(inicial) e t(final)    erro - e
+
+% Para o exemplo m = 68,1   t = 6   g = 9,81    c = 0,25
+
+m = 68.1;   
+g = 9.81;    
+c = 0.25;
+t0 = 0;
+t = 6;
+n = 5;
+
+h = (t - t0)/n;
+
+values = t0+h:h:t-h;
+[j, k] = size(values);
+
+va = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t0);
+vb = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t);
+vc = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * values(1));
+vd = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * values(2));
+ve = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * values(3));
+
+z = ((t - t0)/90) * ((7*va) + (32*vc) + (12*vd) + (32*ve) + (7*vb));
+
+% Cáculo do erro
+a = sqrt(g*m/c);
+b = sqrt(g*c/m);
+
+f6 = -2 * a * (b^2)*(-8*(b^3) * (sech(bt^6)) + 44*(b^3)*(sech(bt^4))*tanh ^2(bt\right)-8b^3\tanh ^4\left(bt\right)\sech ^2\left(bt\right)\right);
+
+fprintf('Distância: %d', z);

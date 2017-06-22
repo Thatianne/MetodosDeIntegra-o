@@ -17,10 +17,9 @@
 m = 68.1;   
 g = 9.81;    
 c = 0.25;
- 
 t0 = 0;
-
 t = 6;
+
 % Cálculo da integral
 va = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t0);
 vb = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t);
