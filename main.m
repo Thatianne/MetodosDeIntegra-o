@@ -1,0 +1,7 @@
+trapezoidal
+trapezoidalComposto
+simpson13
+simpson13Composto
+simpson38
+simpson38Composto
+boole

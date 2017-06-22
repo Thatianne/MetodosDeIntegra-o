@@ -31,4 +31,4 @@ b = sqrt(g*c/m);
 
 f6 = -2*a*(b^2)*((-8*(b^3)*(sech(b*t)^6)) + (44*(b^3)*(sech(b*t)^4)*(tanh(b*t)^2))-(8*b^3*(tanh(b*t)^4)*(sech(b*t)^2)));
 e = -(((t - t0)^7)/1935360) * f6;
-fprintf('Distância: %d (+/-) %d', z, e);
+fprintf('\nBoole\nDistância: %.16f (+/-) %.16f\n', z, e);

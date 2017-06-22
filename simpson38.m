@@ -31,4 +31,4 @@ f4 = -2*a*b^2*(-2*b*(sech(b*tm)^2)*(tanh(b*tm)^2)+(b*sech(b*tm)^4));
 
 e = -(((t-t0)^5)\6480)*f4;
 
-fprintf('Distância: %d (+/-) %d', z, e);
+fprintf('\nSimpson 3/8\nDistância: %.16f (+/-) %.16f\n', z, e);

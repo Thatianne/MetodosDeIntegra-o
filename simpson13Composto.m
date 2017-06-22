@@ -43,5 +43,5 @@ for i = 1:k
 end
 
 e = -(((t-t0)^5)\(180*(n^4)))*mediaf4;
-                                           
-fprintf('Distância: %d (+/-) %d', z, e);
+format long e         
+fprintf('\nSimpson 1/3 Composto\nDistância: %.16f (+/-) %.16f\n', z, e);

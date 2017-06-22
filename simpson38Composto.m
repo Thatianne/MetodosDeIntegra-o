@@ -47,4 +47,4 @@ end
 
 e = -(((t - t0)^5)/(180*n)^4) * mediaf4;
                                            
-fprintf('Distância: %d (+/-) %d', z, e);
+fprintf('\nSimpson 3/8 Composto\nDistância: %.16f (+/-) %.16f\n', z, e);

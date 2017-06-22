@@ -34,8 +34,5 @@ f2 = (-2 * sqrt(c) * (g^(3/2)) * tanh((sqrt(c * g)/(m)) * t) * sech((t * sqrt(g 
 
 e = (-1/12) * f2 *((t - t0)^3);
 
-fprintf('\nDistância: %d', z);
-fprintf(' (+/-) %d', e);
-
-
+fprintf('\nTrapezoidal\nDistância: %.16f (+/-) %.16f\n', z, e);
 

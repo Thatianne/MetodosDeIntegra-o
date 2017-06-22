@@ -35,6 +35,6 @@ for i = 1:k
 end
 e = -(((t - t0)^3)/12*(n^2))* (media/n);
 
-fprintf('Distância: %d (+/-) %d', z, e);
+fprintf('\nTrapezoidal Composto\nDistância: %.16f (+/-) %.16f\n', z, e);
 
 
