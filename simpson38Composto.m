@@ -36,7 +36,7 @@ end
 a = sqrt(g*m/c);
 b = sqrt(g*c/m);
  
-z = (3*h\8)*(va + (3*somatorio1) + (2*somatorio2) + vb);
+zs3c = (3*h\8)*(va + (3*somatorio1) + (2*somatorio2) + vb);
 
 pMedios = values/2;
 mediaf4 = 0;
@@ -45,6 +45,6 @@ for i = 1:k
     mediaf4 = mediaf4 + (v);
 end
 
-e = -(((t - t0)^5)/(180*n)^4) * mediaf4;
+es3c = -(((t - t0)^5)/(180*n)^4) * mediaf4;
                                            
-fprintf('\nSimpson 3/8 Composto\nDistância: %.16f (+/-) %.16f\n', z, e);
+fprintf('Simpson3/8Comp.\t\t %.16f\t\t\t %.16f\n', zs3c, es3c); % VER ERRO

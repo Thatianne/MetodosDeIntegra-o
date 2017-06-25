@@ -23,12 +23,12 @@ vb = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t);
 vc = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * f);
 vd = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * d);
 
-z = ((t-t0)\8) * (va + 3*vc+ 3*vd  + vb);
+zs3 = ((t-t0)\8) * (va + 3*vc+ 3*vd  + vb);
 
 a = sqrt(g*m/c);
 b = sqrt(g*c/m);
 f4 = -2*a*b^2*(-2*b*(sech(b*tm)^2)*(tanh(b*tm)^2)+(b*sech(b*tm)^4));
 
-e = -(((t-t0)^5)\6480)*f4;
+es3 = -(((t-t0)^5)\6480)*f4;
 
-fprintf('\nSimpson 3/8\nDistância: %.16f (+/-) %.16f\n', z, e);
+fprintf('Simpson 3/8\t\t\t %.16f\t\t\t %.16f\n', zs3, es3);

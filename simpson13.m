@@ -10,21 +10,19 @@ g = 9.81;
 c = 0.25; 
 t0 = 0;
 t = 6;
-n = 9;
 
 tm = (t0 + t)/2;
-h = (t - t0)/n;
 
 va = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t0);
 vb = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t);
 vm = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * tm);
 
-z = ((t - t0)/6) * (va + (4*vm) + vb);
+zs = ((t - t0)/6) * (va + (4*vm) + vb);
 
 a = sqrt(g*m/c);
 b = sqrt(g*c/m);
 f4 = -2*a*b^2*(-2*b*(sech(b*tm)^2)*(tanh(b*tm)^2)+(b*sech(b*tm)^4));
 
-e = -(((t-t0)^5)\2880)*f4;
+es = -(((t-t0)^5)\2880)*f4;
 
-fprintf('\nSimpson\nDistância: %.16f (+/-) %.16f\n', z, e);
+fprintf('Simpson 1/3\t\t\t %.16f\t\t\t %.16f\n', zs, es);

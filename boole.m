@@ -23,12 +23,12 @@ vc = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * values(1));
 vd = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * values(2));
 ve = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * values(3));
 
-z = ((t - t0)/90) * ((7*va) + (32*vc) + (12*vd) + (32*ve) + (7*vb));
+zb = ((t - t0)/90) * ((7*va) + (32*vc) + (12*vd) + (32*ve) + (7*vb));
 
 % Cáculo do erro
 a = sqrt(g*m/c);
 b = sqrt(g*c/m);
 
 f6 = -2*a*(b^2)*((-8*(b^3)*(sech(b*t)^6)) + (44*(b^3)*(sech(b*t)^4)*(tanh(b*t)^2))-(8*b^3*(tanh(b*t)^4)*(sech(b*t)^2)));
-e = -(((t - t0)^7)/1935360) * f6;
-fprintf('\nBoole\nDistância: %.16f (+/-) %.16f\n', z, e);
+eb = -(((t - t0)^7)/1935360) * f6;
+fprintf('Boole\t\t\t\t %.16f\t\t\t %.16f\n', zb, eb);

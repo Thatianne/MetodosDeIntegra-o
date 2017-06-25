@@ -24,7 +24,7 @@ t = 6;
 va = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t0);
 vb = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * t);
 
-z = ((va + vb)/2) * (t - t0);
+zt = ((va + vb)/2) * (t - t0);
 
 % Cálculo do erro pegando o ponto médio do intervalo de tempo
 tm = (t - t0)/2;
@@ -32,7 +32,7 @@ f = (sqrt(g * m/c)) * tanh(sqrt(g * c/m) * tm);
 
 f2 = (-2 * sqrt(c) * (g^(3/2)) * tanh((sqrt(c * g)/(m)) * t) * sech((t * sqrt(g * c/m))^2 ))/(sqrt(m));
 
-e = (-1/12) * f2 *((t - t0)^3);
+et = (-1/12) * f2 *((t - t0)^3);
 
-fprintf('\nTrapezoidal\nDistância: %.16f (+/-) %.16f\n', z, e);
+fprintf('Trapezoidal\t\t\t %.16f\t\t\t %.16f\n', zt, et);
 
